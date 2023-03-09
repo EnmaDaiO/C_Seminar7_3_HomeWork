@@ -8,7 +8,7 @@
 
 // 8 7,8 -7,1 9
 
-double[,] CreatMatrix(int rows, int cols)
+double[,] CreatMatrixDouble(int rows, int cols)
 {
     double[,] matrix = new double[rows, cols]; // [строчка, столбец]
     for (int i = 0; i < rows; i++) // строчки; rows = matrix.GetLength(0)
@@ -36,7 +36,7 @@ void PrintMatrix(double[,] matr) // выводим массив в консол�
 }
 
 //1. Создать массив
-double[,] resultMatrix = CreatMatrix(3,4);
+double[,] resultMatrix = CreatMatrixDouble(3,4);
 // 3 строчки и 4 столбца, числа от 0 до 10 включительно
 
 // 2. Посмотрим на нашу матрицу
