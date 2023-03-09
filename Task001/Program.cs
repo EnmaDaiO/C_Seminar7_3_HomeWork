@@ -23,7 +23,7 @@ double[,] CreatMatrixDouble(int rows, int cols)
     return matrix; // Возвращение заполненной таблицы
 }
 
-void PrintMatrix(double[,] matr) // выводим массив в консоль
+void PrintMatrixDouble(double[,] matr) // выводим массив в консоль
 {
     for (int i = 0; i < matr.GetLength(0); i++) // проход по строчкам и считывание элемента
     {
@@ -40,4 +40,4 @@ double[,] resultMatrix = CreatMatrixDouble(3,4);
 // 3 строчки и 4 столбца, числа от 0 до 10 включительно
 
 // 2. Посмотрим на нашу матрицу
-PrintMatrix(resultMatrix);
+PrintMatrixDouble(resultMatrix);
