@@ -16,6 +16,8 @@ double[,] CreatMatrix(int rows, int cols)
         for (int j = 0; j < cols; j++)// столбцы; cols = matrix.GetLength(1) GetLent
         {
             matrix[i, j] = new Random().NextDouble();
+            matrix[i, j] = matrix[i, j] * 100;
+            matrix[i, j] = Math.Round(matrix[i, j], 2);
         }
     }
     return matrix; // Возвращение заполненной таблицы
