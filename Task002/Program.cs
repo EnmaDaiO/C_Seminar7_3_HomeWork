@@ -13,7 +13,7 @@
 
 
 
-int[,] CreatMatrixFoundElement(int rows, int cols, int minValue, int maxValue)
+int[,] CreatMatrix(int rows, int cols, int minValue, int maxValue)
 {
     int[,] matrix = new int[rows, cols]; // [строчка, столбец]
     for (int i = 0; i < rows; i++) // строчки; rows = matrix.GetLength(0)
@@ -41,7 +41,7 @@ void PrintMatrix(int[,] matr) // Печатаем двумерный масси�
 }
 
 // 1. Создать массив
-int[,] resultMatrix = CreatMatrixFoundElement(3,4,0,10);
+int[,] resultMatrix = CreatMatrix(3,4,0,10);
 // 3 строчки и 4 столбца, числа от 0 до 10 включительно
 PrintMatrix(resultMatrix);
 
